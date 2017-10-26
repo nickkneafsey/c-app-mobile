@@ -3,6 +3,8 @@ import { ScrollView, Image }  from 'react-native'
 import { List, Text, ListItem } from 'react-native-elements'
 import _ from 'lodash'
 
+import { checkOrCreateAuthToken } from '../actions/Auth'
+
 // It might be better to obtain these with an API call but to reduce lambda calls I am using this for now
 const services = [
   { key: 'EC2', value: 'Amazon EC2', imageUrl : 'https://s3.amazonaws.com/aws-icons-woo/Compute_AmazonEC2.png' },
@@ -35,6 +37,7 @@ class ServicesScreen extends Component {
 
   componentWillMount() {
     // check for auth token and make request to auth endpoint if not
+    checkOrCreateAuthToken()
   }
 
   render() {
@@ -48,7 +51,10 @@ class ServicesScreen extends Component {
                   key={service.key}
                   title={service.value}
                   avatar={{ uri: service.imageUrl }}
-                  avatarStyle={{ backgroundColor: 'white' }}
+                  avatarStyle={{
+                    backgroundColor: 'white',
+                    // resizeMode: Image.resizeMode.contain  // add this back later
+                  }}
                   onPress={() => this.props.navigation.navigate('Service', { service: service.key })}
                 />
               )
