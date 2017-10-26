@@ -3,7 +3,7 @@ import { ScrollView, Image }  from 'react-native'
 import { List, Text, ListItem } from 'react-native-elements'
 import _ from 'lodash'
 
-import { checkOrCreateAuthToken } from '../actions/Auth'
+import { getOrCreateAuthToken } from '../utilities/Auth'
 
 // It might be better to obtain these with an API call but to reduce lambda calls I am using this for now
 const services = [
@@ -37,7 +37,7 @@ class ServicesScreen extends Component {
 
   componentWillMount() {
     // check for auth token and make request to auth endpoint if not
-    checkOrCreateAuthToken()
+    getOrCreateAuthToken()
   }
 
   render() {
