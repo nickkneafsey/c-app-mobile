@@ -60,3 +60,11 @@ export function getOrCreateAuthToken() {
     return null
   })
 }
+
+export async function getTokenFromStorage() {
+  return await Storage.load({
+  	key: 'token',
+  	autoSync: true,
+  	syncInBackground: true,
+  })
+}
