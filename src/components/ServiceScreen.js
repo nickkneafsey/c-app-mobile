@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
-import { Card, Text } from 'react-native-elements'
+import { View } from 'react-native'
+import { Card, Text, Button } from 'react-native-elements'
+import _ from 'lodash'
+
 import fetchQuestionsByService from '../queries/fetchQuestionsByService'
+import services from '../utilities/services'
 
 
 class ServiceScreen extends Component {
@@ -10,15 +14,24 @@ class ServiceScreen extends Component {
   }
 
   render() {
-    console.log("data", this.props.data)
-    const { data } = this.props
-    let totalQuestions = 0
-    if(data && data.questions) { totalQuestions = data.questions.length }
+    const { data, navigation } = this.props
+    const questions = data.questions ? data.questions : []
+    const service =  _.find(services, { 'key': navigation.state.params.service });
     return (
       <Card>
-        <Text>test</Text>
-        <Text>{this.props.navigation.state.params.service}</Text>
-        <Text>Total Questions: {totalQuestions}</Text>
+        <Text h3>{service.value}</Text>
+        <View>
+          <Text></Text>
+          <Text>Total Questions: {questions.length}</Text>
+          <Text>Your best score:</Text>
+          <Text></Text>
+          <Button
+            onPress={() => navigation.navigate('Questions', { questions })}
+            title={'Start Answering Questions'}
+            color={'white'}
+            backgroundColor={'#ec912d'}
+          />
+        </View>
       </Card>
     )
   }

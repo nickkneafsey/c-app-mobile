@@ -15,6 +15,7 @@ import AuthReducer from './src/reducers/AuthReducer'
 import HomeScreen from './src/components/HomeScreen'
 import ServicesScreen from './src/components/ServicesScreen'
 import ServiceScreen from './src/components/ServiceScreen'
+import QuestionSwipeDeck from './src/components/QuestionSwipeDeck'
 
 
 import { getTokenFromStorage } from './src/utilities/Auth'
@@ -55,6 +56,7 @@ const AppNavigator = StackNavigator({
   Home: { screen: HomeScreen },
   Service: { screen: ServiceScreen },
   Services: { screen: ServicesScreen },
+  Questions: { screen: QuestionSwipeDeck },
 })
 
 // App
