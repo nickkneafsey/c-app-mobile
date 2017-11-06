@@ -3,7 +3,6 @@ import Storage from './Storage'
 
 const LAMBDA_URL = 'https://l9poitcws4.execute-api.us-east-1.amazonaws.com/prod'
 
-// Not really actions but whatever
 export function createAuthToken() {
   console.log("Creating Auth token")
   return axios.post(`${LAMBDA_URL}/auth`, {})
@@ -51,9 +50,11 @@ export function getOrCreateAuthToken() {
   	console.warn(err.message)
   	switch (err.name) {
 	    case 'NotFoundError':
+        console.log("Token not found error")
         createAuthToken()
         break;
       case 'ExpiredError':
+        console.log("Token expired")
         createAuthToken()
         break;
   	}

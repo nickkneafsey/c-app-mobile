@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  answers
+  answers: []
 }
 
 export default (state = INITIAL_STATE, action) => {

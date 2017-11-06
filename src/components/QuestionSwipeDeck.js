@@ -22,19 +22,14 @@ class QuestionSwipeDeck extends Component {
     if (correctAnswers.length === 1) {
       answers = [ answer ]
     } else {
-      // Answer already in array => remove from array
       if (answers.indexOf(answer) !== -1) {
+        // Answer already in array => remove from array
         answers = _.remove(answers, (a) => { return a === answer })
-      }
-
-      // Array not full => add to array
-       else if (answers.length < correctAnswers.length) {
+      } else if (answers.length < correctAnswers.length) {
+        // Array not full => add to array
         answers.push(answer)
-      }
-
-
-      // Array already full and answer not in array => alert
-      else if (answers.length >= correctAnswers.length) {
+      } else if (answers.length >= correctAnswers.length) {
+        // Array already full and answer not in array => alert
         Alert.alert(
           'Too Many Answers',
           'Please unselect an answer before selecting another',
@@ -50,11 +45,17 @@ class QuestionSwipeDeck extends Component {
   }
 
   renderEndButton() {
-    if (this.state.showEndButton) {
+    const { navigation } = this.props
+    const { answers } = this.state
+    const questions = navigation.state.params.questions
+    if (this.state.showEndButton || questions.length === 1) {
       return (
         <Button
           buttonStyle={{ bottom: 50 }}
           title={'Submit Answers'}
+          color={'black'}
+          backgroundColor={'white'}
+          onPress={navigation.navigate.bind(this, 'Summary', { answers, questions })}
         />
       )
     }
@@ -62,7 +63,7 @@ class QuestionSwipeDeck extends Component {
 
   render() {
     const { navigation } = this.props
-    if (this.props.navigation.state.params.questions.length === 0) {
+    if (navigation.state.params.questions.length === 0) {
       return <Text>No Questions available at this time</Text>
     }
 
@@ -71,6 +72,7 @@ class QuestionSwipeDeck extends Component {
         loop={false}
         showButtons={true}
         onIndexChanged={(index) => {
+          console.log("III", index)
           if (index === navigation.state.params.questions.length - 1) {
             this.setState({ showEndButton: true })
           } else {
@@ -78,7 +80,7 @@ class QuestionSwipeDeck extends Component {
           }
         }}
         >
-        { this.props.navigation.state.params.questions.map((q) => {
+        { navigation.state.params.questions.map((q) => {
           return (
             <View style={{flex: 1}} key={q.id}>
               <ScrollView>

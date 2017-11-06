@@ -10,12 +10,13 @@ import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
 import ReduxThunk from 'redux-thunk';
 import ReduxPromise from 'redux-promise'
 
-import AuthReducer from './src/reducers/AuthReducer'
+import { AuthReducer, ServiceReducer } from './src/reducers'
 
 import HomeScreen from './src/components/HomeScreen'
 import ServicesScreen from './src/components/ServicesScreen'
 import ServiceScreen from './src/components/ServiceScreen'
 import QuestionSwipeDeck from './src/components/QuestionSwipeDeck'
+import SummaryScreen from './src/components/SummaryScreen'
 
 
 import { getTokenFromStorage } from './src/utilities/Auth'
@@ -48,6 +49,7 @@ const client = new ApolloClient({
 // Reducers
 const reducers = combineReducers({
   auth: AuthReducer,
+  service: ServiceReducer,
   apollo: client.reducer()
 })
 
@@ -57,6 +59,7 @@ const AppNavigator = StackNavigator({
   Service: { screen: ServiceScreen },
   Services: { screen: ServicesScreen },
   Questions: { screen: QuestionSwipeDeck },
+  Summary: { screen: SummaryScreen }
 })
 
 // App
