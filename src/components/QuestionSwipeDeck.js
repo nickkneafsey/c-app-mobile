@@ -6,17 +6,15 @@ import _ from 'lodash'
 
 import QuestionSwipeCard from './QuestionSwipeCard'
 
-
 class QuestionSwipeDeck extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = { answers: {}, showEndButton: false }
   }
 
-  onAnswerPress(answer, questionObject) {
+  onAnswerPress (answer, questionObject) {
     const { id, correctAnswers } = questionObject
-    console.log(id, answer)
     let answers = this.state.answers[id] || []
 
     if (correctAnswers.length === 1) {
@@ -34,17 +32,17 @@ class QuestionSwipeDeck extends Component {
           'Too Many Answers',
           'Please unselect an answer before selecting another',
           [
-            {text: 'OK', onPress: () => console.log('OK Pressed')},
+            {text: 'OK', onPress: () => console.log('OK Pressed')}
           ],
           { cancelable: true }
         )
       }
     }
 
-    this.setState({ answers: { ...this.state.answers, [id]: answers  }})
+    this.setState({ answers: { ...this.state.answers, [id]: answers } })
   }
 
-  renderEndButton() {
+  renderEndButton () {
     const { navigation } = this.props
     const { answers } = this.state
     const questions = navigation.state.params.questions
@@ -61,7 +59,7 @@ class QuestionSwipeDeck extends Component {
     }
   }
 
-  render() {
+  render () {
     const { navigation } = this.props
     if (navigation.state.params.questions.length === 0) {
       return <Text>No Questions available at this time</Text>
@@ -70,9 +68,9 @@ class QuestionSwipeDeck extends Component {
     return (
       <Swiper
         loop={false}
-        showButtons={true}
+        showButtons
         onIndexChanged={(index) => {
-          console.log("III", index)
+          console.log('III', index)
           if (index === navigation.state.params.questions.length - 1) {
             this.setState({ showEndButton: true })
           } else {

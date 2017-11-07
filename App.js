@@ -1,23 +1,21 @@
 'use strict'
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { Text } from 'react-native-elements'
+// import { StyleSheet } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
-import ReduxThunk from 'redux-thunk';
+import ReduxThunk from 'redux-thunk'
 import ReduxPromise from 'redux-promise'
 
-import { AuthReducer, ServiceReducer } from './src/reducers'
+import { ServiceReducer } from './src/reducers'
 
 import HomeScreen from './src/components/HomeScreen'
 import ServicesScreen from './src/components/ServicesScreen'
 import ServiceScreen from './src/components/ServiceScreen'
 import QuestionSwipeDeck from './src/components/QuestionSwipeDeck'
 import SummaryScreen from './src/components/SummaryScreen'
-
 
 import { getTokenFromStorage } from './src/utilities/Auth'
 
@@ -27,19 +25,18 @@ const networkInterface = createNetworkInterface({
 })
 
 networkInterface.use([{
-  applyMiddleware(req, next) {
+  applyMiddleware (req, next) {
     if (!req.options.headers) {
       req.options.headers = {}  // Create the header object if needed.
     }
 
     getTokenFromStorage().then((token) => {
-      req.options.headers.authorization = token ? `${token}` : null;
-      console.log("Token for network interface", token)
+      req.options.headers.authorization = token ? `${token}` : null
+      console.log('Token for network interface', token)
       next()
     })
   }
 }])
-
 
 // Create Apollo client with network interface
 const client = new ApolloClient({
@@ -48,7 +45,6 @@ const client = new ApolloClient({
 
 // Reducers
 const reducers = combineReducers({
-  auth: AuthReducer,
   service: ServiceReducer,
   apollo: client.reducer()
 })
@@ -74,11 +70,11 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center'
+//   }
+// })

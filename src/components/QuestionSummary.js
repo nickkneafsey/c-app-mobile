@@ -4,7 +4,7 @@ import { List, ListItem, Card, Text } from 'react-native-elements'
 import _ from 'lodash'
 
 class QuestionSummary extends Component {
-  determineAnswerIcon(question, answer) {
+  determineAnswerIcon (question, answer) {
     // not-interested check arrow-long-right
     let icon = { name: null, color: null }
     const userChosenAnswer = _.includes(question.userAnswers, answer)
@@ -17,14 +17,13 @@ class QuestionSummary extends Component {
     return icon
   }
 
-  renderQuestions() {
+  renderQuestions () {
     return this.props.questions.map((question) => {
       return (
         <Card key={question.id}>
           <Text>{question.text}</Text>
           <List>
             { question.answers.map((answer) => {
-              console.log(question)
               let icon = this.determineAnswerIcon(question, answer)
               return (
                 <ListItem
@@ -41,8 +40,7 @@ class QuestionSummary extends Component {
     })
   }
 
-
-  render() {
+  render () {
     return (
       <View>
         { this.renderQuestions() }
