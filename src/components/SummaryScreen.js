@@ -5,15 +5,17 @@ import { Card, Text, Icon, Button } from 'react-native-elements'
 import { HeaderBackButton, NavigationActions } from 'react-navigation'
 import _ from 'lodash'
 
+import Storage from '../utilities/Storage'
 import QuestionSummary from './QuestionSummary'
 
 
 class SummaryScreen extends Component {
   static navigationOptions = ({ navigation }) => {
-    console.log("navv", navigation.state)
-    headerLeft: (
-      <HeaderBackButton onPress={() => { navigation.goBack({routeName: 'Services'}) }} />
-    )
+    return {
+      headerLeft: (
+        <HeaderBackButton onPress={() => navigation.goBack()} />
+      )
+    }
   }
 
   constructor (props) {
@@ -40,7 +42,6 @@ class SummaryScreen extends Component {
 
     questions.forEach((question, index) => {
       const { id, correctAnswers } = question
-      // const newQuestion = { ...question, userAnswers: answers[id]}
       let newQuestions = this.state.questions
       newQuestions[index] = { ...question, userAnswers: answers[id] }
 
@@ -51,11 +52,39 @@ class SummaryScreen extends Component {
       }
     })
 
+    const score = _.toInteger((totalCorrectAnswers / numberOfQuestions) * 100)
+    this.checkForHighScore(score)
+
     this.setState({
-      score: (totalCorrectAnswers / numberOfQuestions) * 100,
+      score,
       scoreString: `${totalCorrectAnswers} out of ${numberOfQuestions}`
     })
     // TODO set this is async storage later
+  }
+
+  checkForHighScore(score) {
+    Storage.load({
+      key: `${this.props.service}HighScore`
+    }).then(data => {
+      console.log("DATAAA", data)
+      if (score > data) {
+        Storage.save({
+          key: `${this.props.service}HighScore`,
+          data: score
+        })
+      }
+    }).catch(err => {
+      console.log(err.message)
+      switch (err.name) {
+        case 'NotFoundError':
+          console.log('Token not found error')
+          Storage.save({
+            key: `${this.props.service}HighScore`,
+            data: score
+          })
+          break
+      }
+    })
   }
 
   render () {

@@ -22,7 +22,7 @@ class QuestionSwipeDeck extends Component {
     } else {
       if (answers.indexOf(answer) !== -1) {
         // Answer already in array => remove from array
-        answers = _.remove(answers, (a) => { return a === answer })
+         _.pull(answers, answer)
       } else if (answers.length < correctAnswers.length) {
         // Array not full => add to array
         answers.push(answer)
@@ -70,7 +70,6 @@ class QuestionSwipeDeck extends Component {
         loop={false}
         showButtons
         onIndexChanged={(index) => {
-          console.log('III', index)
           if (index === navigation.state.params.questions.length - 1) {
             this.setState({ showEndButton: true })
           } else {
