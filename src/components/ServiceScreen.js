@@ -9,8 +9,9 @@ import services from '../utilities/services'
 
 
 class ServiceScreen extends Component {
-  static navigationOptions = {
-    title: 'Service'
+  static navigationOptions = ({ navigation }) => {
+    const service =  _.find(services, { 'key': navigation.state.params.service })
+    return { title: service.value }
   }
 
   render() {
