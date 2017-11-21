@@ -1,0 +1,236 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a0e7f8a1958112e4bc59ac6",
+        "text": "True or False: IAM roles are specific to each AWS region.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e7f961958112e4bc59ac8",
+        "text": "You are provisioning an EC2 instance that needs access to an S3 bucket. Which of the following is the best way to do this?",
+        "answers": [
+          "Add your Access Key ID and Secret Access ID to the EC2",
+          "Create a IAM Group with S3 access and add the EC2 instance to that group",
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "correctAnswers": [
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e7fcf1958112e4bc59aca",
+        "text": "You are provisioning an EC2 instance that needs access to an S3 bucket. Which of the following is the best way to do this?",
+        "answers": [
+          "Add your Access Key ID and Secret Access ID to the EC2",
+          "Create a IAM Group with S3 access and add the EC2 instance to that group",
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "correctAnswers": [
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e7ff11958112e4bc59acc",
+        "text": "You are provisioning a virtual machine outside of AWS that needs access to an S3 bucket. Which of the following is the best way to do this?",
+        "answers": [
+          "Add your personal admin Access Key ID and Secret Access ID to the VM.",
+          "Create an IAM User with access to the bucket. Add the keys of this user to the VM.",
+          "Create a IAM Group with S3 access and add the VM instance to that group.",
+          "Add a IAM Role to the VM that has access to the S3 bucket."
+        ],
+        "correctAnswers": [
+          "Create an IAM User with access to the bucket. Add the keys of this user to the VM."
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e80021958112e4bc59ace",
+        "text": "True or False. You can use Active Directory federation in conjunction with IAM",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e800e1958112e4bc59ad0",
+        "text": "It is a good idea to limit the amount of IAM Groups you create to prevent high costs",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e801a1958112e4bc59ad2",
+        "text": "Which AWS service enables you to request temporary, limited-privilege credentials for IAM users or federated users?",
+        "answers": [
+          "Oauth Service",
+          "Security Token Service",
+          "Amazon Authentication Service",
+          "Amazon SQS"
+        ],
+        "correctAnswers": [
+          "Security Token Service"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e80261958112e4bc59ad4",
+        "text": "When you authenticate to AWS via Google or Facebook along with STS what action is called that provides a user with temporary security credentials?",
+        "answers": [
+          "AssumeRoleViaWebProvider",
+          "AssumeRoleWithSAML",
+          "GetCallerIdentity",
+          "AssumeRoleWithWebIdentity"
+        ],
+        "correctAnswers": [
+          "AssumeRoleWithWebIdentity"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e80331958112e4bc59ad6",
+        "text": "Which of the following should you utilize when you have several users that should have the same permissions?",
+        "answers": [
+          "Groups",
+          "Roles",
+          "User Clusters"
+        ],
+        "correctAnswers": [
+          "Groups"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e80401958112e4bc59ad8",
+        "text": "When a new user is created in an existing account, by default the user has permission to create up to 5 S3 buckets and spin up up to 5 EC2 instances",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e804e1958112e4bc59ada",
+        "text": "True of False. You can attach multiple roles to an EC2 instance",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e805c1958112e4bc59adc",
+        "text": "True of False. AWS automatically tracks versions of your policies so that you can easily rollback policy changes",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e80761958112e4bc59ade",
+        "text": "You are provisioning an EC2 instance that needs access to an S3 bucket. Which of the following is the best way to do this?",
+        "answers": [
+          "Add your Access Key ID and Secret Access ID to the EC2",
+          "Create a IAM Group with S3 access and add the EC2 instance to that group",
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "correctAnswers": [
+          "Add a IAM Role to the EC2 that has access to the S3 bucket"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e9b2c1958112e4bc59ae0",
+        "text": "True of False. You can retrieve your Secret Access Key by contacting AWS support should you lose it.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e9b3b1958112e4bc59ae2",
+        "text": "True of False. A user can belong to multiple Groups.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e9b461958112e4bc59ae4",
+        "text": "Can you add an IAM role to an EC2 instance that is already running?",
+        "answers": [
+          "Yes",
+          "No",
+          "You cannot add IAM roles to EC2 instances at any time"
+        ],
+        "correctAnswers": [
+          "Yes"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e9b651958112e4bc59ae6",
+        "text": "Can federated users access the console or AWS APIs?",
+        "answers": [
+          "Federated Users can access the console only",
+          "Federated Users can access APIs only",
+          "Federated Users can access either the console or AWS API's"
+        ],
+        "correctAnswers": [
+          "Federated Users can access either the console or AWS API's"
+        ],
+        "service": "IAM"
+      },
+      {
+        "id": "5a0e9b6f1958112e4bc59ae8",
+        "text": "After authenticating against your ADFS server and receiving a SAML assertion what API call is made to request temporary security credentials?",
+        "answers": [
+          "AssumeRoleWithSAML",
+          "GetFederationToken",
+          "GetSessionToken",
+          "AssumeRole"
+        ],
+        "correctAnswers": [
+          "AssumeRoleWithSAML"
+        ],
+        "service": "IAM"
+      }
+    ]
+  }
+}

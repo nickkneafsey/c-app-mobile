@@ -7,13 +7,14 @@ import _ from 'lodash'
 
 import Storage from '../utilities/Storage'
 import QuestionSummary from './QuestionSummary'
+import services from '../utilities/services'
 
 
 class SummaryScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerLeft: (
-        <HeaderBackButton onPress={() => navigation.goBack()} />
+        <HeaderBackButton title={"Questions"} onPress={() => navigation.goBack()} />
       )
     }
   }
@@ -88,10 +89,13 @@ class SummaryScreen extends Component {
   }
 
   render () {
+    const service =  _.find(services, { 'key': this.props.service })
+
+
     return (
       <ScrollView>
         <Card>
-          <Text>{this.props.service}</Text>
+          <Text>{service.value}</Text>
           <Text>{this.state.score}%</Text>
           <Text>{this.state.scoreString}</Text>
         </Card>

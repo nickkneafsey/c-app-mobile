@@ -7,22 +7,25 @@ import _ from 'lodash'
 import fetchQuestionsByService from '../queries/fetchQuestionsByService'
 import services from '../utilities/services'
 import Storage from '../utilities/Storage'
+import * as BackupData from '../data'
 
 
 class ServiceScreen extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { highScore: 0 }
+    const { service } = this.props.navigation.state.params
+    this.state = { highScore: 0, backupQuestions: BackupData[service] }
   }
 
   componentWillMount() {
+    const { service } = this.props.navigation.state.params
     Storage.load({
-      key: `${this.props.navigation.state.params.service}HighScore`
+      key: `${service}HighScore`
     }).then(data => {
       console.log('dddd', data)
       this.setState({ highScore: data })
-    })
+    }).catch((err) => console.log("do nothing"))
   }
 
   static navigationOptions = ({ navigation }) => {
@@ -32,7 +35,10 @@ class ServiceScreen extends Component {
 
   render() {
     const { data, navigation } = this.props
-    const questions = data.questions ? data.questions : []
+    const { backupQuestions } = this.state
+
+    const questions = data.questions && data.questions.length > 0 ? data.questions : backupQuestions.data.questions
+
     const service =  _.find(services, { 'key': navigation.state.params.service });
     return (
       <Card>
