@@ -1,0 +1,78 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d20702403cb07494d511d",
+        "text": "True or False. By default CloudFormation rolls back its changes when a stack fails to deploy successfully.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFORMATION"
+      },
+      {
+        "id": "5a5d20792403cb07494d511f",
+        "text": "True or False. You only pay for the resources that are created by CloudFormation. You do not need to pay for the actual service.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFORMATION"
+      },
+      {
+        "id": "5a5d20822403cb07494d5121",
+        "text": "True or False. On a CloudFormation rollback you will not be charged for the resources that were rolled back.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "CLOUDFORMATION"
+      },
+      {
+        "id": "5a5d208c2403cb07494d5123",
+        "text": "True or False.  In CloudFormation, you can install software on an EC2 instance at the time of stack creation.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFORMATION"
+      },
+      {
+        "id": "5a5d20942403cb07494d5125",
+        "text": "True or False. There is a limit to the number of Lambda of functions that can execute at once.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "CLOUDFORMATION"
+      },
+      {
+        "id": "5a5d209d2403cb07494d5127",
+        "text": "True or False. CloudFormation can work with Chef and Puppet.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFORMATION"
+      }
+    ]
+  }
+}

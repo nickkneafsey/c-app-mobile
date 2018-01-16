@@ -23,7 +23,7 @@ class ServicesScreen extends Component {
       <ScrollView>
         <List>
           {
-            services.map((service) => {
+            services.filter((service) => service.developerAssociate).map((service) => {
               return (
                 <ListItem
                   key={service.key}

@@ -1,0 +1,302 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d243f35b83d0808f56a5b",
+        "text": "True or false. You could install mysql-server in an S3 bucket as a low cost database option.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d244a35b83d0808f56a5d",
+        "text": "True or false. When you add a new object to S3 you can expect immediate consistency for that object.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d245335b83d0808f56a5f",
+        "text": "True or false. When overwriting an existing object in S3, you can expect immediate consistency for retrieving that object",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d245c35b83d0808f56a61",
+        "text": "How much data can you store in S3?",
+        "answers": [
+          "10 TB",
+          "100 TB",
+          "1000 TB",
+          "Unlimited Storage"
+        ],
+        "correctAnswers": [
+          "Unlimited Storage"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d246635b83d0808f56a63",
+        "text": "What is the largest size an object uploaded in a single PUT can be?",
+        "answers": [
+          "1 TB",
+          "5 TB",
+          "10 TB",
+          "100 TB"
+        ],
+        "correctAnswers": [
+          "5 TB"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d247035b83d0808f56a65",
+        "text": "You are attempting to upload a large object to S3. Which of the following features will improve uploading experience?",
+        "answers": [
+          "Encryption",
+          "Multipart Upload",
+          "S3 can handle large objects by default"
+        ],
+        "correctAnswers": [
+          "Multipart Upload"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d247d35b83d0808f56a67",
+        "text": "You are trying to create an S3 bucket called ‘cloud-bucket’. Why might you not be able to use this name?",
+        "answers": [
+          "You cannot use hyphens in an S3 bucket name",
+          "S3 buckets have a universal namespace, and someone has already taken this name",
+          "Bucket names must begin with a capital letter"
+        ],
+        "correctAnswers": [
+          "S3 buckets have a universal namespace, and someone has already taken this name"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d248635b83d0808f56a69",
+        "text": "You are trying to create an S3 bucket called ‘Cloud-bucket’. Why might you not be able to use this name?",
+        "answers": [
+          "You cannot use hyphens in an S3 bucket name",
+          "S3 buckets have a universal namespace, and someone has already taken this name",
+          "Bucket cannot begin with a capital letter"
+        ],
+        "correctAnswers": [
+          "Bucket cannot begin with a capital letter"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d249035b83d0808f56a6b",
+        "text": "True or false. You can enable versioning on S3 buckets.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d249b35b83d0808f56a6d",
+        "text": "You work at a company that deals with medical data that is stored in S3. After some time, objects are only needed for auditing purposes, and do not need immediate retrieval. What tier of S3 would be best for storing such objects in the most cost effective way?",
+        "answers": [
+          "S3",
+          "S3-IA",
+          "S3-Non-immediate",
+          "Glacier"
+        ],
+        "correctAnswers": [
+          "Glacier"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24a735b83d0808f56a6f",
+        "text": "You host a website which occasionally serves PDFs that are hosted in an S3 bucket. Most objects are only accessed once ever. What tier of S3 would be best for storing such objects in the most cost effective way?",
+        "answers": [
+          "S3",
+          "S3-IA",
+          "S3-Non-immediate",
+          "Glacier"
+        ],
+        "correctAnswers": [
+          "S3-IA"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24b335b83d0808f56a71",
+        "text": "You are plagued with slower upload times than you would like in some areas. Which of the following options could help to improve this experience in slower areas?",
+        "answers": [
+          "Transfer Acceleration",
+          "S3-RRS",
+          "S3-IA",
+          "Multipart Upload"
+        ],
+        "correctAnswers": [
+          "Transfer Acceleration"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24bd35b83d0808f56a73",
+        "text": "True or False. S3 is a good place to host a static website.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24c935b83d0808f56a75",
+        "text": "True or false. If you stop an EC2 instance backed by an EBS volume, you will lose all data on the device",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24d635b83d0808f56a77",
+        "text": "You create a new S3 Bucket. True or False. By default this new bucket is Public.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24e035b83d0808f56a79",
+        "text": "S3 Versioning is ________.",
+        "answers": [
+          "Diff Based",
+          "File Based",
+          "Bucket Based",
+          "S3 does not support versioning"
+        ],
+        "correctAnswers": [
+          "File Based"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24e935b83d0808f56a7b",
+        "text": "True or false. You need versioning enabled in your S3 bucket in order to have Cross Region Replication available.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24f435b83d0808f56a7d",
+        "text": "You would like an object to be stored in multiple data centers that are geographically separate from each other in case of disaster. Which option would allow you to do this for the smallest possible price?",
+        "answers": [
+          "S3 Bucket",
+          "S3 Bucket with Cross Region Replication",
+          "S3 bucket with Cross Region Replication to an S3-IA Bucket"
+        ],
+        "correctAnswers": [
+          "S3 Bucket"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d24fd35b83d0808f56a7f",
+        "text": "You have a bucket containing files that can easily be regenerated if they are lost. These files are accessed regularly. Which of the following options would be best for storing these files?",
+        "answers": [
+          "S3",
+          "S3-IA",
+          "S3-RRS",
+          "Glacier"
+        ],
+        "correctAnswers": [
+          "S3-RRS"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d250735b83d0808f56a81",
+        "text": "Are you charged for accessing your objects in S3?",
+        "answers": [
+          "Yes",
+          "No, you only pay for storage"
+        ],
+        "correctAnswers": [
+          "Yes"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d251335b83d0808f56a83",
+        "text": "You are running a Ruby on Rails app that uses the AWS SDK. You want to serve an image that is stored in an S3 bucket once a user has authenticated against the app. Which of the following ways could you serve this image without leaving it exposed to the internet?",
+        "answers": [
+          "Create an IAM User for the authenticated user and grant that user permission to the bucket",
+          "Use a pre-signed URL",
+          "Use the SDK to make the object public temporarily",
+          "Copy the image to a public bucket temporarily and remove the image when the user is no longer authenticated"
+        ],
+        "correctAnswers": [
+          "Use a pre-signed URL"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d251e35b83d0808f56a85",
+        "text": "True or False. You can enable multi factor authentication on S3 PUTS to prevent against accidentally adding objects to the incorrect bucket.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "S3"
+      },
+      {
+        "id": "5a5d252935b83d0808f56a87",
+        "text": "True or False. You can enable multi factor authentication on S3 Deletes to prevent against accidental deletions of objects.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "S3"
+      }
+    ]
+  }
+}

@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { ScrollView } from 'react-native'
-import { Card, Text, Icon, Button } from 'react-native-elements'
+import { Card, Text, Icon, Button, PricingCard } from 'react-native-elements'
 import { HeaderBackButton, NavigationActions } from 'react-navigation'
 import _ from 'lodash'
 
 import Storage from '../utilities/Storage'
 import QuestionSummary from './QuestionSummary'
 import services from '../utilities/services'
+import { resetAction } from '../actions/ResetActions'
 
 
 class SummaryScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerLeft: (
-        <HeaderBackButton title={"Questions"} onPress={() => navigation.goBack()} />
+        <HeaderBackButton title={"Home"} onPress={() => navigation.dispatch(resetAction)} />
       )
     }
   }
@@ -80,7 +81,7 @@ class SummaryScreen extends Component {
         case 'NotFoundError':
           console.log('Token not found error')
           Storage.save({
-            key: `${this.props.service}HighScore`,
+            key: `${_.replace(this.props.service, new RegExp("_","g"),"-")}HighScore`,
             data: score
           })
           break
@@ -94,11 +95,13 @@ class SummaryScreen extends Component {
 
     return (
       <ScrollView>
-        <Card>
-          <Text>{service.value}</Text>
-          <Text>{this.state.score}%</Text>
-          <Text>{this.state.scoreString}</Text>
-        </Card>
+        <PricingCard
+          title={service.value}
+          price={`${this.state.score}%`}
+          info={[ this.state.scoreString ]}
+          button={{ title: "Return Home", icon: 'cloud' }}
+          onButtonPress={ () => this.props.navigation.dispatch(resetAction) }
+        />
         <QuestionSummary questions={this.state.questions} />
       </ScrollView>
     )

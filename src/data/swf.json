@@ -1,0 +1,144 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d26b91bf6b308803202a8",
+        "text": "In SWF, a _______ is a logical container for your application resources. Each workflow type, activity type, and execution belongs to one of these.",
+        "answers": [
+          "Domain",
+          "Worker",
+          "Activity",
+          "Decider"
+        ],
+        "correctAnswers": [
+          "Domain"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26c51bf6b308803202aa",
+        "text": "A _______ is a program that interacts with SWF to process tasks",
+        "answers": [
+          "Domain",
+          "Worker",
+          "Activity",
+          "Decider"
+        ],
+        "correctAnswers": [
+          "Worker"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26cc1bf6b308803202ac",
+        "text": "True or False. A worker must run in AWS.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26d51bf6b308803202ae",
+        "text": "A _______ schedules activity tasks, processes events, and ultimately ends a workflow when its objective has been finished.",
+        "answers": [
+          "Domain",
+          "Worker",
+          "Activity",
+          "Decider"
+        ],
+        "correctAnswers": [
+          "Decider"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26df1bf6b308803202b0",
+        "text": "A _______ is a program that receives activity tasks and performs them.",
+        "answers": [
+          "Domain",
+          "Worker",
+          "Activity Worker",
+          "Decider"
+        ],
+        "correctAnswers": [
+          "Activity Worker"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26e81bf6b308803202b2",
+        "text": "What is the maximum amount of time a workflow can take?",
+        "answers": [
+          "7 days",
+          "30 days",
+          "1 year",
+          "Unlimited amount of time"
+        ],
+        "correctAnswers": [
+          "1 year"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26f21bf6b308803202b4",
+        "text": "Which other AWS service is used for managing workflows?",
+        "answers": [
+          "S3",
+          "Complicated Workflow",
+          "Step Functions",
+          "Dynamo Workflows"
+        ],
+        "correctAnswers": [
+          "Step Functions"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d26fa1bf6b308803202b6",
+        "text": "SWF offers a ________ oriented API.",
+        "answers": [
+          "message",
+          "task",
+          "document"
+        ],
+        "correctAnswers": [
+          "task"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d27021bf6b308803202b8",
+        "text": "By default, what is the maximum number of domains you can have in one AWS account?",
+        "answers": [
+          "100",
+          "1000",
+          "2500",
+          "10000"
+        ],
+        "correctAnswers": [
+          "100"
+        ],
+        "service": "SWF"
+      },
+      {
+        "id": "5a5d270d1bf6b308803202ba",
+        "text": "In SQS, which of the following are you not charged for?",
+        "answers": [
+          "Requests",
+          "Transfers of data to EC2 in a different region",
+          "Transfers of data to EC2 in the same region",
+          "Viewing SQS information in the console"
+        ],
+        "correctAnswers": [
+          "Transfers of data to EC2 in the same region",
+          "Viewing SQS information in the console"
+        ],
+        "service": "SWF"
+      }
+    ]
+  }
+}

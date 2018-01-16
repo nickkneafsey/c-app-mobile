@@ -1,0 +1,109 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d231235b83d0808f56a2f",
+        "text": "Which of the following languages is not supported by Lambda?",
+        "answers": [
+          "Java",
+          "Node.js",
+          "Python",
+          "Ruby"
+        ],
+        "correctAnswers": [
+          "Ruby"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d231b35b83d0808f56a31",
+        "text": "Are you able to SSH to the server where a Lambda function is running?",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d232735b83d0808f56a33",
+        "text": "True or False. Lambda may reuse a function more than once.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d233235b83d0808f56a35",
+        "text": "What is the max time a Lambda function can execute?",
+        "answers": [
+          "1 min",
+          "5 min",
+          "60 min",
+          "24 hours"
+        ],
+        "correctAnswers": [
+          "5 min"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d233c35b83d0808f56a37",
+        "text": "Which of the following cannot trigger a Lambda function?",
+        "answers": [
+          "AWS Cloudwatch",
+          "API Gateway",
+          "Amazon S3",
+          "DynamoDB",
+          "Amazon RDS"
+        ],
+        "correctAnswers": [
+          "Amazon RDS"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d234635b83d0808f56a39",
+        "text": "True or False. You are responsible for scaling your Lambda function.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d235135b83d0808f56a3b",
+        "text": "True or false. You could install mysql-server in an S3 bucket as a low cost database option.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "LAMBDA"
+      },
+      {
+        "id": "5a5d235a35b83d0808f56a3d",
+        "text": "True or False. There is a limit to the number of Lambda of functions that can execute at once.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "LAMBDA"
+      }
+    ]
+  }
+}

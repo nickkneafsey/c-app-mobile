@@ -30,6 +30,7 @@ class QuestionSummary extends Component {
                   leftIcon={icon}
                   key={answer}
                   title={answer}
+                  titleNumberOfLines={null}
                   hideChevron
                 />
               )

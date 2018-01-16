@@ -1,0 +1,123 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d259835b83d0808f56a89",
+        "text": "True or False. Amazon SNS follows the pub-sub messaging paradigm.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25a035b83d0808f56a8b",
+        "text": "Which of the following is not a supported protocol of SNS.",
+        "answers": [
+          "Email",
+          "HTTP",
+          "Email-JSON",
+          "SFTP",
+          "HTTPS",
+          "SQS",
+          "SMS"
+        ],
+        "correctAnswers": [
+          "SFTP"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25aa35b83d0808f56a8d",
+        "text": "True or False. Amazon SNS is pull based, while Amazon SQS is push based.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25b335b83d0808f56a8f",
+        "text": "True or False. Amazon SNS charges the same amount for HTTP, SMS, and Email.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25bc35b83d0808f56a91",
+        "text": "True or False. You can subscribe multiple SQS queues to an SNS Topic.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25c635b83d0808f56a93",
+        "text": "Which of the following platforms does not support SNS push notifications?",
+        "answers": [
+          "Amazon Device Messaging",
+          "Apple Push Notification Service",
+          "Google Cloud Messaging",
+          "Motorola Push Service",
+          "Windows Push Notification Service",
+          "Baidu Cloud Push"
+        ],
+        "correctAnswers": [
+          "Motorola Push Service"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25cf35b83d0808f56a95",
+        "text": "True or False. You cannot set a TTL for each message.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25dc35b83d0808f56a97",
+        "text": "True or False. You can trigger an update query to an RDS instance directly via an SNS notification.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SNS"
+      },
+      {
+        "id": "5a5d25e735b83d0808f56a99",
+        "text": "True or False. You can trigger Lambda function directly via an SNS notification.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SNS"
+      }
+    ]
+  }
+}

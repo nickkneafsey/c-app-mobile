@@ -1,0 +1,383 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d20d42403cb07494d5129",
+        "text": "DynamoDB is stored on _________ storage.",
+        "answers": [
+          "HDD",
+          "SSD",
+          "Magnetic"
+        ],
+        "correctAnswers": [
+          "SSD"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d20e32403cb07494d512b",
+        "text": "You have an app that requires you to read 10 items per second that are 3KB per item. What should you set the read throughput to be if you want eventual consistent reads?",
+        "answers": [
+          "5",
+          "7",
+          "10",
+          "15",
+          "30"
+        ],
+        "correctAnswers": [
+          "5"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d20ed2403cb07494d512d",
+        "text": "You have an app that requires you to read 10 items per second that are 3KB per item. What should you set the read throughput to be if you want strongly consistent reads?",
+        "answers": [
+          "5",
+          "7",
+          "10",
+          "15",
+          "30"
+        ],
+        "correctAnswers": [
+          "10"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d20f62403cb07494d512f",
+        "text": "You have an app that requires you to write 10 items per second that are 3KB per item. What should you set the write throughput to?",
+        "answers": [
+          "5",
+          "7",
+          "10",
+          "15",
+          "30"
+        ],
+        "correctAnswers": [
+          "30"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d20ff2403cb07494d5131",
+        "text": "True or False. If you do not use your provisioned throughput capacity, you are not charged for it.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21082403cb07494d5133",
+        "text": "True or False. DynamoDB allows you to purchase reserved capacity for 1 year or 3 year terms at a lower cost.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21122403cb07494d5135",
+        "text": "What type of data structures are stored in DynamoDB?",
+        "answers": [
+          "Key-Value",
+          "Document",
+          "Both key-value and documents"
+        ],
+        "correctAnswers": [
+          "Both key-value and documents"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d211b2403cb07494d5137",
+        "text": "True or False. There is an Auto Scaling feature available for DynamoDB",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21252403cb07494d5139",
+        "text": "By default, the operations PutItem, UpdateItem, DeleteItem are unconditional, however you have the ability to enable conditional writes.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d212f2403cb07494d513b",
+        "text": "What is the default consistency model for DynamoDB?",
+        "answers": [
+          "Eventually Consistent Reads",
+          "Strongly Consistent Reads"
+        ],
+        "correctAnswers": [
+          "Eventually Consistent Reads"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d213b2403cb07494d513d",
+        "text": "DynamoDB Triggers trigger which of the following services?",
+        "answers": [
+          "RDS",
+          "SNS",
+          "Lambda",
+          "SQS"
+        ],
+        "correctAnswers": [
+          "Lambda"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21452403cb07494d513f",
+        "text": "True or False. A Local secondary index has the same partition key as its table, but a different sort key.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21502403cb07494d5141",
+        "text": "True or False. A Global secondary index must have the same partition and sort key as its table.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d215b2403cb07494d5143",
+        "text": "True or False. You can provision throughput separately for a table and each global secondary index.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21652403cb07494d5145",
+        "text": "Which of the following provides a a time-ordered sequence of item-level changes made to data in a table in the last 24 hours.",
+        "answers": [
+          "DynamoDB Triggers",
+          "DynamoDB Streams",
+          "DynamoDB Scans",
+          "DynamoDB FGAC"
+        ],
+        "correctAnswers": [
+          "DynamoDB Streams"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d216e2403cb07494d5147",
+        "text": "True or false. If you stop an EC2 instance backed by an EBS volume, you will lose all data on the device",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21772403cb07494d5149",
+        "text": "Which of the following is more efficient?",
+        "answers": [
+          "Query",
+          "Scan"
+        ],
+        "correctAnswers": [
+          "Query"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21812403cb07494d514b",
+        "text": "Which of the following is more efficient?",
+        "answers": [
+          "Query",
+          "Scan"
+        ],
+        "correctAnswers": [
+          "Query"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d218c2403cb07494d514d",
+        "text": "You would like to query for several items at once. Which of the following API calls will allow for this?",
+        "answers": [
+          "GetItems",
+          "BatchGetItem",
+          "GroupGetItem",
+          "GetItem"
+        ],
+        "correctAnswers": [
+          "BatchGetItem"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21982403cb07494d514f",
+        "text": "What will happen if you exceed your maximum throughput for a table?",
+        "answers": [
+          "Performance will not suffer, but you will have to pay extra for more throughput",
+          "ProvisionedThroughputExceededException",
+          "LimitExceededException",
+          "ResourceInUseException"
+        ],
+        "correctAnswers": [
+          "ProvisionedThroughputExceededException"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21a22403cb07494d5151",
+        "text": "Should you exceed your maximum throughput for a table, what response code will you get?",
+        "answers": [
+          "200",
+          "300",
+          "400",
+          "500"
+        ],
+        "correctAnswers": [
+          "400"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21ad2403cb07494d5153",
+        "text": "A Global Secondary index can be created ________.",
+        "answers": [
+          "Anytime",
+          "Only at the time of table creation"
+        ],
+        "correctAnswers": [
+          "Anytime"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21b92403cb07494d5155",
+        "text": "A Local secondary index can be created ________.",
+        "answers": [
+          "Anytime",
+          "Only at the time of table creation"
+        ],
+        "correctAnswers": [
+          "Only at the time of table creation"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21c22403cb07494d5157",
+        "text": "How many Global Secondary Indexes can you have?",
+        "answers": [
+          "2",
+          "5",
+          "10",
+          "25"
+        ],
+        "correctAnswers": [
+          "5"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21ce2403cb07494d5159",
+        "text": "How many Local Secondary Indexes can you have?",
+        "answers": [
+          "2",
+          "5",
+          "10",
+          "25"
+        ],
+        "correctAnswers": [
+          "5"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21d82403cb07494d515b",
+        "text": "What is the maximum amount of data one BatchGetItem can retrieve?",
+        "answers": [
+          "50KB",
+          "100KB",
+          "16MB",
+          "32MB"
+        ],
+        "correctAnswers": [
+          "16MB"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21e42403cb07494d515d",
+        "text": "Which of the following is best to use for a critical update where having the correct value is important?",
+        "answers": [
+          "Atomic Counter",
+          "Conditional Write"
+        ],
+        "correctAnswers": [
+          "Conditional Write"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21ee2403cb07494d515f",
+        "text": "What service is used to trigger an Auto Scaling event in DynamoDB?",
+        "answers": [
+          "CloudTrail",
+          "CloudWatch",
+          "Lambda",
+          "EC2"
+        ],
+        "correctAnswers": [
+          "CloudWatch"
+        ],
+        "service": "DYNAMO_DB"
+      },
+      {
+        "id": "5a5d21f92403cb07494d5161",
+        "text": "True or False. You can separately provision throughput to a Global Secondary Index.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "DYNAMO_DB"
+      }
+    ]
+  }
+}

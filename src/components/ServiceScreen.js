@@ -20,10 +20,11 @@ class ServiceScreen extends Component {
 
   componentWillMount() {
     const { service } = this.props.navigation.state.params
+    // use replace because storage library doesnt allow for underscores
     Storage.load({
-      key: `${service}HighScore`
+      key: `${_.replace(service, new RegExp("_","g"),"-")}HighScore`
     }).then(data => {
-      console.log('dddd', data)
+      console.log('data', data)
       this.setState({ highScore: data })
     }).catch((err) => console.log("do nothing"))
   }
@@ -36,6 +37,8 @@ class ServiceScreen extends Component {
   render() {
     const { data, navigation } = this.props
     const { backupQuestions } = this.state
+
+    console.log("QUESTION DATA FROM SERVER", data)
 
     const questions = data.questions && data.questions.length > 0 ? data.questions : backupQuestions.data.questions
 

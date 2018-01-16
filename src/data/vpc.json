@@ -1,0 +1,223 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d271c1bf6b308803202bc",
+        "text": "True or false. You may only have one Internet Gateway per VPC.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27251bf6b308803202be",
+        "text": "True or false. You can have a subnet span across multiple availability zones.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d272f1bf6b308803202c0",
+        "text": "Your company has a separate VPC for both a development and a production environment. You create a security group that allows your Application servers access your MySQL database servers on port 3306 in the development environment. Can you use this same security group in your production environment?",
+        "answers": [
+          "Yes, but this is considered bad practice",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27391bf6b308803202c2",
+        "text": "Your company has a 3 tier architecture setup for some of its applications with an internet facing web tier, a business logic tier, and a data store tier. In this setup...",
+        "answers": [
+          "…the web and business logic tiers would go in a public subnet and the data store tier would go in a private subnet",
+          "…the web tier would go in a public subnet and the data store and business logic tiers would go in a private subnet",
+          "All three would go in a public subnet since this is a web application",
+          "All three would go in a private subnet to keep the app secure"
+        ],
+        "correctAnswers": [
+          "…the web tier would go in a public subnet and the data store and business logic tiers would go in a private subnet"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27441bf6b308803202c4",
+        "text": "You set up a NAT instance, but you are still unable to reach the internet via EC2 instances running in your private subnet. Which of the following could be causing the failure in your setup?",
+        "answers": [
+          "Your NAT instance is in a public subnet",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d274f1bf6b308803202c6",
+        "text": "True or false. You should only put NAT instances in private subnets.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27591bf6b308803202c8",
+        "text": "You have a a fleet of IPv6 instances that are running in a private subnet. Which of the following solutions is best for allowing these instances to reach the internet?",
+        "answers": [
+          "NAT Gateway",
+          "Egress-Only Internet Gateway",
+          "NAT Instance",
+          "Ingress-Only Internet Gateway"
+        ],
+        "correctAnswers": [
+          "Egress-Only Internet Gateway"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27631bf6b308803202ca",
+        "text": "Which of the following are fully managed AWS Services?",
+        "answers": [
+          "NAT Gateway",
+          "Egress-Only Internet Gateway",
+          "NAT Instance",
+          "Ingress-Only Internet Gateway"
+        ],
+        "correctAnswers": [
+          "NAT Gateway",
+          "Egress-Only Internet Gateway"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d276f1bf6b308803202cc",
+        "text": "You have two Network Access Control Lists which do not have conflicting rules. You have a subnet where you would like the rules from both lists to be applied. Can you attach both Access Control Lists to a single subnet?",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27781bf6b308803202ce",
+        "text": "Which of the following rules is evaluated first?",
+        "answers": [
+          "Security Groups",
+          "Network Access Control Lists"
+        ],
+        "correctAnswers": [
+          "Network Access Control Lists"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27831bf6b308803202d0",
+        "text": "From your application logs, you notice potentially malicious requests coming from a particular IP address. You would like to block this IP address from accessing your site until you have investigated the issue. Which of the following is the most appropriate for blocking an IP address?",
+        "answers": [
+          "Network Access Control List",
+          "Security Group",
+          "Route Table",
+          "Amazon IP Service"
+        ],
+        "correctAnswers": [
+          "Network Access Control List"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27ad1bf6b308803202d2",
+        "text": "Your company has a separate AWS accounts for its IT department, Applications department, and its Data Science department. There is VPC peering setup between the Applications Department and the IT department, and there is another peering connection between the IT department and the Data Science Department. The Applications team needs to collaborate on a project with the Data Science team and would like to use internal network to communicate between services. What do they need to do in order to set this up?",
+        "answers": [
+          "Nothing, both accounts should be able to communicate with each other via their peering connections to the IT account",
+          "Set up a VPC peering connection between the Data Science department account and the Applications department account",
+          "Enable transitive peering in the IT account"
+        ],
+        "correctAnswers": [
+          "Set up a VPC peering connection between the Data Science department account and the Applications department account"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27b61bf6b308803202d4",
+        "text": "Can you have overlapping IP addresses in accounts that have VPC peering enabled between them?",
+        "answers": [
+          "Yes",
+          "Yes, but you need to specify which accounts via the console or API",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27c01bf6b308803202d6",
+        "text": "Can you have overlapping IP addresses in accounts that have VPC peering enabled between them?",
+        "answers": [
+          "Yes, but you need to specify which accounts via the console or API",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27ca1bf6b308803202d8",
+        "text": "Which of the following services can be used to monitor the network traffic in your VPC?",
+        "answers": [
+          "Flow Logs",
+          "CloudFormation",
+          "VPC Monitoring Service",
+          "Cloud Front"
+        ],
+        "correctAnswers": [
+          "Flow Logs"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27d81bf6b308803202da",
+        "text": "True or False. A VPC can span multiple Availability Zones.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27e11bf6b308803202dc",
+        "text": "True or False. A VPC can span multiple Regions.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "VPC"
+      }
+    ]
+  }
+}

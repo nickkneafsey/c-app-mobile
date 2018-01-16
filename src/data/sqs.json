@@ -1,0 +1,228 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "59e5b2720d21666ce0827b03",
+        "text": "True or False: SQS was the first AWS Service.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a013d59731f6b179ef975a1",
+        "text": "Can you use a FIFO queue as a dead letter queue?",
+        "answers": [
+          "You can use either a standard queue or a FIFO queue",
+          "No",
+          "You can only use a FIFO dead letter queue in conjunction with a FIFO queue"
+        ],
+        "correctAnswers": [
+          "You can only use a FIFO dead letter queue in conjunction with a FIFO queue"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a05580a35c9a120b47b098a",
+        "text": "Select the members of the simpsons family",
+        "answers": [
+          "Marge",
+          "Lenny",
+          "Homer",
+          "Flanders",
+          "Bart",
+          "Moe",
+          "Lisa"
+        ],
+        "correctAnswers": [
+          "Marge",
+          "Homer",
+          "Bart",
+          "Lisa"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d25f835b83d0808f56a9b",
+        "text": "What is the default visibility timeout of an SQS message?",
+        "answers": [
+          "30 seconds",
+          "10 minutes",
+          "1 hour",
+          "6 hours",
+          "12 hours"
+        ],
+        "correctAnswers": [
+          "30 seconds"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d260035b83d0808f56a9d",
+        "text": "What is the maximum visibility timeout on SQS messages?",
+        "answers": [
+          "30 seconds",
+          "10 minutes",
+          "1 hour",
+          "6 hours",
+          "12 hours"
+        ],
+        "correctAnswers": [
+          "12 hours"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d260e35b83d0808f56a9f",
+        "text": "Excluding the SQS Extended Client Library for Java, what is the largest size an SQS message can be?",
+        "answers": [
+          "128KB",
+          "256KB",
+          "256MB",
+          "1GB"
+        ],
+        "correctAnswers": [
+          "256KB"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d261735b83d0808f56aa1",
+        "text": "What is the longest amount of time a message can remain in a queue?",
+        "answers": [
+          "1 hour",
+          "24 hours",
+          "7 days",
+          "14 days"
+        ],
+        "correctAnswers": [
+          "14 days"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d262035b83d0808f56aa3",
+        "text": "What is the maximum number of messages in a queue?",
+        "answers": [
+          "1 million",
+          "20 million",
+          "75 million",
+          "Unlimited"
+        ],
+        "correctAnswers": [
+          "Unlimited"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d263135b83d0808f56aa5",
+        "text": "True or False. SQS messages must be in JSON format.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d263b35b83d0808f56aa7",
+        "text": "True or False. An SQS message maybe delivered more than one time.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d264435b83d0808f56aa9",
+        "text": "True or False. To send the same message to multiple SQS queues a possible solution is to create an SNS topic, subscribe the queues to that topic, and send messages to the topic.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d264e35b83d0808f56aab",
+        "text": "You recently implemented a SQS queue to one of your production systems. You notice that your SQS bill is higher than you expected and you have a lot more empty receives than you anticipated. Which of the following solutions will help you to reduce costs and reduce the number of empty receives?",
+        "answers": [
+          "Add a second queue for priority messages",
+          "Extend the visibility timeout",
+          "Use a FIFO queue instead",
+          "Enable long polling"
+        ],
+        "correctAnswers": [
+          "Enable long polling"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d265935b83d0808f56aad",
+        "text": "You run an online service that encodes videos. When a user chooses to encode a video, a message is put on SQS to enqueue the encoding job. Your service offers a free tier and a paid tier. The messages from the paid tier need to take precedence over the messages created using the free tier. Which of the following solutions would allow for this?",
+        "answers": [
+          "Add a second queue for priority messages",
+          "Add a flag to the SQS messages to indicate that paid tier messages take priority",
+          "Use a FIFO queue",
+          "Add the free tier messages to a dead letter queue"
+        ],
+        "correctAnswers": [
+          "Add a second queue for priority messages"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d266335b83d0808f56aaf",
+        "text": "You have an application where the business logic requires that messages are received in the same order they are sent. Which of the following queues should you use?",
+        "answers": [
+          "Standard SQS Queue",
+          "FIFO Queue"
+        ],
+        "correctAnswers": [
+          "FIFO Queue"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d266d35b83d0808f56ab1",
+        "text": "If you have a FIFO Queue and you want to configure it to be used in conjunction with a Dead Letter Queue, which type of queue should you use",
+        "answers": [
+          "Standard SQS Queue",
+          "FIFO Queue",
+          "It does not matter what type of queue you use",
+          "You cannot configure a Dead Letter Queue with a FIFO queue"
+        ],
+        "correctAnswers": [
+          "FIFO Queue"
+        ],
+        "service": "SQS"
+      },
+      {
+        "id": "5a5d267735b83d0808f56ab3",
+        "text": "In SQS, which of the following are you not charged for?",
+        "answers": [
+          "Requests",
+          "Transfers of data to EC2 in a different region",
+          "Transfers of data to EC2 in the same region",
+          "Viewing SQS information in the console"
+        ],
+        "correctAnswers": [
+          "Transfers of data to EC2 in the same region",
+          "Viewing SQS information in the console"
+        ],
+        "service": "SQS"
+      }
+    ]
+  }
+}

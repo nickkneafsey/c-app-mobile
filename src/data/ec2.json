@@ -1,0 +1,360 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a19c87f9a168b081224c9b7",
+        "text": "You have a workload that requires EC2 Compute power. The deadline for finishing the workload is not strict. What type of instance would allow for you to complete the workload in the most cost efficient manner?",
+        "answers": [
+          "On Demand",
+          "Reserved",
+          "Spot"
+        ],
+        "correctAnswers": [
+          "Spot"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b2fc64b8105f98c9bd4",
+        "text": "You have a set of web servers that will get a predictable amount of traffic. You know that these servers will be running for an extended period of time. Which type of instance would be best to use in this scenario?",
+        "answers": [
+          "On Demand",
+          "Reserved",
+          "Spot",
+          "Dedicated"
+        ],
+        "correctAnswers": [
+          "Reserved"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b3cc64b8105f98c9bd6",
+        "text": "You are working for an organization that is governed by a body which does not allow for shared tenancy. Which type of instance would be best to use in this scenario?",
+        "answers": [
+          "On Demand",
+          "Reserved",
+          "Spot",
+          "Dedicated"
+        ],
+        "correctAnswers": [
+          "Dedicated"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b48c64b8105f98c9bd8",
+        "text": "Can you block a specific IP address with Security Groups?",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b55c64b8105f98c9bda",
+        "text": "You are going to run a NoSQL Database on an EC2 that will need very high IO. What instance type would best suit these needs?",
+        "answers": [
+          "i3",
+          "c4",
+          "t2",
+          "g3",
+          "m4"
+        ],
+        "correctAnswers": [
+          "i3"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b62c64b8105f98c9bdc",
+        "text": "You have a development server that has basic compute requirements. You would like to keep the costs down for this server. What instance type would best suit these needs?",
+        "answers": [
+          "i3",
+          "c4",
+          "t2",
+          "g3",
+          "m4"
+        ],
+        "correctAnswers": [
+          "t2"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b6fc64b8105f98c9bde",
+        "text": "True or false. You can attach an EBS volume from us-west-2a to an EC2 instance running in us-west-2b.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b7cc64b8105f98c9be0",
+        "text": "True or false. You can attach an EBS volume from us-west-2a to an EC2 instance running in us-west-2b.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b8fc64b8105f98c9be2",
+        "text": "True or false. There is an option to run a shell script at the time of launch for an EC2 instance.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1b9dc64b8105f98c9be4",
+        "text": "You change the rules of a security group associated with a running EC2 instance. How long do you need to wait before these rules come into effect?",
+        "answers": [
+          "Approximately 5 min",
+          "Immediately",
+          "Until the next time your instance is rebooted",
+          "The top of the nearest hour"
+        ],
+        "correctAnswers": [
+          "Immediately"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1bb0c64b8105f98c9be6",
+        "text": "You would like to add a security rule to only allow SSH access to your IP Address. Your IP address is 69.180.167.35. Which of the following IPv4 addresses would you allow inbound access to port 22?",
+        "answers": [
+          "69.180.167.35/8",
+          "69.180.167.35/16",
+          "69.180.167.35/24",
+          "69.180.167.35/32"
+        ],
+        "correctAnswers": [
+          "69.180.167.35/32"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1bbdc64b8105f98c9be8",
+        "text": "You would like to add a security rule to only allow SSH access to your IP Address. Your IP address is 69.180.167.35. Which of the following IPv4 addresses would you allow inbound access to port 22?",
+        "answers": [
+          "69.180.167.35/8",
+          "69.180.167.35/16",
+          "69.180.167.35/24",
+          "69.180.167.35/32"
+        ],
+        "correctAnswers": [
+          "69.180.167.35/32"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1bc9c64b8105f98c9bea",
+        "text": "Can you use an AMI from the Oregon region in the Northern Virginia Region?",
+        "answers": [
+          "Yes",
+          "No, but you can copy the AMI to a different region",
+          "You need to create the AMI from scratch in Northern Virginia"
+        ],
+        "correctAnswers": [
+          "No, but you can copy the AMI to a different region"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1bd7c64b8105f98c9bec",
+        "text": "You need to mount a block storage device to multiple EC2 instances. Which of the following services is best of this scenario?",
+        "answers": [
+          "EFS",
+          "EBS",
+          "S3"
+        ],
+        "correctAnswers": [
+          "EFS"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1be3c64b8105f98c9bee",
+        "text": "True or false. You can attach a service role to a running EC2",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1befc64b8105f98c9bf0",
+        "text": "Which of the following curl commands will give you the public IP address for an EC2 instance when run from the instance?",
+        "answers": [
+          "curl 169.254.169.254/latest/meta-data/public-ipv4",
+          "curl 169.254.169.254/latest/meta-data | grep 'public-ipv4’",
+          "curl aws.amazon.com/latest/meta-data | grep 'public-ipv4’",
+          "curl aws.amazon.com/latest/meta-data/public-ipv4"
+        ],
+        "correctAnswers": [
+          "curl 169.254.169.254/latest/meta-data/public-ipv4"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1bfbc64b8105f98c9bf2",
+        "text": "Your colleague configured an ELB to communicate with an EC2 instance running a web server. In the corporate office your colleague is able to see the webpage via the ELB, but you are unable to from outside the office. Which two of the following answers could be causing this?",
+        "answers": [
+          "ELBs can take longer to serve external traffic than internal traffic",
+          "Your colleague configured an internal load balancer",
+          "The security groups attached to the ELB do not permit for external web traffic",
+          "ELBs can only serve traffic within the VPC the ELB is located"
+        ],
+        "correctAnswers": [
+          "Your colleague configured an internal load balancer",
+          "The security groups attached to the ELB do not permit for external web traffic"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c09c64b8105f98c9bf4",
+        "text": "You have an ELB in front of two web servers. The 'Healthy Threshold’ is set to 3. The 'Unhealthy Threshold’ is set to 2. The interval is set to 5. One of the servers runs out of disk space and begins to fail to serve web traffic to the health check endpoint. How long until that instance is removed from the ELB?",
+        "answers": [
+          "10 seconds",
+          "3 seconds",
+          "15 seconds",
+          "10 minutes",
+          "2 minutes"
+        ],
+        "correctAnswers": [
+          "10 seconds"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c15c64b8105f98c9bf6",
+        "text": "You have cross-zone load balancing enabled on your ELB. You have 10 instances behind an ELB. 6 of these instances are in us-west-2a and 4 of these instances are in us-west-2b. What percentage of requests to the ELB will be routed to instances in us-west-2a",
+        "answers": [
+          "60 percent",
+          "50 percent",
+          "100 percent"
+        ],
+        "correctAnswers": [
+          "60 percent"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c4ac64b8105f98c9bf8",
+        "text": "You have cross-zone load balancing disabled on your ELB. You have 10 instances behind an ELB. 6 of these instances are in us-west-2a and 4 of these instances are in us-west-2b. What percentage of requests to the ELB will be routed to instances in us-west-2a",
+        "answers": [
+          "60 percent",
+          "50 percent",
+          "100 percent"
+        ],
+        "correctAnswers": [
+          "50 percent"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c56c64b8105f98c9bfa",
+        "text": "Your company does not use Route 53 for DNS. You have a new site called hackerrank.co. You would like to point this DNS record at your ELB. It is considered best practice to point the DNS name to the IP Address of the ELB",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c60c64b8105f98c9bfc",
+        "text": "Target groups are a concept within Classic Load Balancers, but are not a component for Application Load Balancers",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c6bc64b8105f98c9bfe",
+        "text": "You took a snapshot of an encrypted EBS volume. You would like to create a new encrypted instance from this snapshot. Do you need to go through the encryption process again?",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswers": [
+          "No"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c77c64b8105f98c9c00",
+        "text": "True or false. If you reboot an EC2 instance backed by an instance store, you will lose all data on the device",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c82c64b8105f98c9c02",
+        "text": "True or false. If you stop an EC2 instance backed by an instance store, you will lose all data on the device",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c8ec64b8105f98c9c04",
+        "text": "You need to mount a block storage device to multiple EC2 instances. Which of the following services is best of this scenario?",
+        "answers": [
+          "EFS",
+          "EBS",
+          "S3"
+        ],
+        "correctAnswers": [
+          "EFS"
+        ],
+        "service": "EC2"
+      },
+      {
+        "id": "5a5d1c9bc64b8105f98c9c06",
+        "text": "True or false. If you stop an EC2 instance backed by an EBS volume, you will lose all data on the device",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "EC2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d22bc35b83d0808f56a23",
+        "text": "Which of the following development stacks is not supported out of the box for Elastic Beanstalk?",
+        "answers": [
+          "Apache Tomcat for Java Applications",
+          "Nginx for Node.js Applications",
+          "GenServer for Elixir",
+          "Microsoft IIS for .NET applications"
+        ],
+        "correctAnswers": [
+          "GenServer for Elixir"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      },
+      {
+        "id": "5a5d22c535b83d0808f56a25",
+        "text": "Which of the following development stacks is not supported out of the box for Elastic Beanstalk?",
+        "answers": [
+          "Docker",
+          "Go",
+          "RabbitMQ",
+          "Apache HTTP Server for Python Applications"
+        ],
+        "correctAnswers": [
+          "RabbitMQ"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      },
+      {
+        "id": "5a5d22ce35b83d0808f56a27",
+        "text": "True or False. RDS is the only database solution you can use with Elastic Beanstalk.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      },
+      {
+        "id": "5a5d22d835b83d0808f56a29",
+        "text": "True or False. Besides the resources provisioned in Elastic Beanstalk, you must also pay a small fee for the provisioning of the service.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      },
+      {
+        "id": "5a5d22e235b83d0808f56a2b",
+        "text": "You are running a Ruby application using AWS Elastic Beanstalk. You have managed platform updates enabled. A coworker of yours is concerned that when a patch is released, there maybe an outage in your application. Which of the following will happen when the patch is released?",
+        "answers": [
+          "Elastic Beanstalk will spin up a new fleet of EC2 instances and wait until the instances pass a health check until terminating the old instances",
+          "Elastic Beanstalk will patch the existing EC2 instances one at a time so that there is no downtime",
+          "There will be a small outage, but it will be during a maintenance window that you provide"
+        ],
+        "correctAnswers": [
+          "Elastic Beanstalk will spin up a new fleet of EC2 instances and wait until the instances pass a health check until terminating the old instances"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      },
+      {
+        "id": "5a5d22f235b83d0808f56a2d",
+        "text": "You created a MySQL RDS instance via Elastic Beanstalk along with a Node.js application. When you delete the application, will the database be deleted?",
+        "answers": [
+          "Yes",
+          "No"
+        ],
+        "correctAnswers": [
+          "Yes"
+        ],
+        "service": "ELASTIC_BEANSTALK"
+      }
+    ]
+  }
+}

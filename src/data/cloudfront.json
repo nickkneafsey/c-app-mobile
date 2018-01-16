@@ -1,0 +1,82 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d1fb2c64b8105f98c9c08",
+        "text": "True or False. CloudFront data is cached in Edge Locations, which are different from Availability Zones.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFRONT"
+      },
+      {
+        "id": "5a5d1fbcc64b8105f98c9c0a",
+        "text": "True or False. You can use CloudFront with origin servers that are not running on AWS.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFRONT"
+      },
+      {
+        "id": "5a5d1fc3c64b8105f98c9c0c",
+        "text": "True or False. There is no charge for removing an asset from CloudFront prior to the TTL expiring.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "CLOUDFRONT"
+      },
+      {
+        "id": "5a5d1fcdc64b8105f98c9c0e",
+        "text": "True or False. Amazon CloudFront supports streaming.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "CLOUDFRONT"
+      },
+      {
+        "id": "5a5d1fdac64b8105f98c9c10",
+        "text": "What is the default expiration period for a file in CloudFront?",
+        "answers": [
+          "2 hours",
+          "12 hours",
+          "24 hours",
+          "7 days"
+        ],
+        "correctAnswers": [
+          "24 hours"
+        ],
+        "service": "CLOUDFRONT"
+      },
+      {
+        "id": "5a5d20672403cb07494d511b",
+        "text": "What is the default expiration period for a file in CloudFront?",
+        "answers": [
+          "2 hours",
+          "12 hours",
+          "24 hours",
+          "7 days"
+        ],
+        "correctAnswers": [
+          "24 hours"
+        ],
+        "service": "CLOUDFRONT"
+      }
+    ]
+  }
+}

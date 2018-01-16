@@ -1,0 +1,198 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5d238b35b83d0808f56a3f",
+        "text": "Which of the following is not a supported record type for Route53?",
+        "answers": [
+          "A",
+          "AAA",
+          "AAAA",
+          "CNAME",
+          "MX"
+        ],
+        "correctAnswers": [
+          "AAA"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d239635b83d0808f56a41",
+        "text": "True or False. Route53 supports Mail Exchanger (MX) Records",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23a035b83d0808f56a43",
+        "text": "If you would like to point your zone apex at an ELB, which of the following types of records is best to use?",
+        "answers": [
+          "A Record",
+          "C Record",
+          "Alias Record",
+          "SOA Record"
+        ],
+        "correctAnswers": [
+          "Alias Record"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23ab35b83d0808f56a45",
+        "text": "True or False. You cannot register a domain using AWS.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23b735b83d0808f56a47",
+        "text": "True or False. You can create multiple hosted zones for the same domain name.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23c135b83d0808f56a49",
+        "text": "You have a hosted zone named hackerrank.co. Which of the following records could not be within that hosted zone?",
+        "answers": [
+          "www.hackerrank.co",
+          "api.hackerrank.co",
+          "www.hackerrank.net",
+          "All of these records could be found within that hosted zone"
+        ],
+        "correctAnswers": [
+          "www.hackerrank.net"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23cb35b83d0808f56a4b",
+        "text": "You have Route 53 set up in multiple regions. You would like for your customers to get the quickest response possible. Which of the following policies would you select?",
+        "answers": [
+          "Simple",
+          "Geolocation",
+          "Weighted",
+          "Latency",
+          "Failover"
+        ],
+        "correctAnswers": [
+          "Latency"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23d635b83d0808f56a4d",
+        "text": "You have a fleet of EC2’s running in Ireland and a fleet of EC2’s running in the United States. Which of the following wouid you use if you want to route 80% of traffic to your fleet in the United States and the other 20% to Ireland?",
+        "answers": [
+          "Simple",
+          "Geolocation",
+          "Weighted",
+          "Latency",
+          "Failover"
+        ],
+        "correctAnswers": [
+          "Weighted"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23e035b83d0808f56a4f",
+        "text": "You have a fleet of EC2’s running in Ireland and a fleet of EC2’s running in the United States. Which of the following wouid you use if you want to route 80% of traffic to your fleet in the United States and the other 20% to Ireland?",
+        "answers": [
+          "Simple",
+          "Geolocation",
+          "Weighted",
+          "Latency",
+          "Failover"
+        ],
+        "correctAnswers": [
+          "Weighted"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23ec35b83d0808f56a51",
+        "text": "You are running an application where you would like to serve localized content for some particular countries. Which of the following policies would you use to achieve this?",
+        "answers": [
+          "Simple",
+          "Geolocation",
+          "Weighted",
+          "Latency",
+          "Failover"
+        ],
+        "correctAnswers": [
+          "Geolocation"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d23f635b83d0808f56a53",
+        "text": "You are running an application that is unstable. During times when the main site is unavailable, you would like to route the user to a website that is hosted in an S3 bucket. Which of the following policies will allow for you to do this?",
+        "answers": [
+          "Simple",
+          "Geolocation",
+          "Weighted",
+          "Latency",
+          "Failover"
+        ],
+        "correctAnswers": [
+          "Failover"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d240135b83d0808f56a55",
+        "text": "You have a weighted policy that with a weight of 6 on US West 2 and a weight of 2 on US East 1. What percentage of the traffic will go to US East 1?",
+        "answers": [
+          "50",
+          "2",
+          "25",
+          "20"
+        ],
+        "correctAnswers": [
+          "25"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d240c35b83d0808f56a57",
+        "text": "True or False. You can use the Private DNS feature of Route 53 without using a VPC",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "ROUTE_53"
+      },
+      {
+        "id": "5a5d241735b83d0808f56a59",
+        "text": "True or False. Route 53 supports wildcard entries.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "True"
+        ],
+        "service": "ROUTE_53"
+      }
+    ]
+  }
+}
