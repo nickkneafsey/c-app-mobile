@@ -81,18 +81,6 @@
         "service": "LAMBDA"
       },
       {
-        "id": "5a5d235135b83d0808f56a3b",
-        "text": "True or false. You could install mysql-server in an S3 bucket as a low cost database option.",
-        "answers": [
-          "True",
-          "False"
-        ],
-        "correctAnswers": [
-          "False"
-        ],
-        "service": "LAMBDA"
-      },
-      {
         "id": "5a5d235a35b83d0808f56a3d",
         "text": "True or False. There is a limit to the number of Lambda of functions that can execute at once.",
         "answers": [

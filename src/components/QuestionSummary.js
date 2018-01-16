@@ -21,7 +21,7 @@ class QuestionSummary extends Component {
     return this.props.questions.map((question) => {
       return (
         <Card key={question.id}>
-          <Text>{question.text}</Text>
+          <Text style={{ fontSize: 20 }}>{question.text}</Text>
           <List>
             { question.answers.map((answer) => {
               let icon = this.determineAnswerIcon(question, answer)

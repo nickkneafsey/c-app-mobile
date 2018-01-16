@@ -27,26 +27,6 @@
         "service": "SQS"
       },
       {
-        "id": "5a05580a35c9a120b47b098a",
-        "text": "Select the members of the simpsons family",
-        "answers": [
-          "Marge",
-          "Lenny",
-          "Homer",
-          "Flanders",
-          "Bart",
-          "Moe",
-          "Lisa"
-        ],
-        "correctAnswers": [
-          "Marge",
-          "Homer",
-          "Bart",
-          "Lisa"
-        ],
-        "service": "SQS"
-      },
-      {
         "id": "5a5d25f835b83d0808f56a9b",
         "text": "What is the default visibility timeout of an SQS message?",
         "answers": [

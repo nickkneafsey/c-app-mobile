@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Button, Text, PricingCard } from 'react-native-elements'
+import { View } from 'react-native'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -9,17 +10,28 @@ class HomeScreen extends Component {
   render () {
     const { navigation } = this.props
     return (
-      <PricingCard
-        color='#ec912d'
-        title='AWS Developer Associate Exam Questions'
-        price='Ace the exam'
-        info={['The number one exam prep guide of all time', 'Powered by AWS']}
-        button={{
-          title: 'View Questions by Service',
-          icon: 'cloud',
-        }}
-        onButtonPress={ () => navigation.navigate('Services') }
-      />
+      <View style={{
+        flex: 1,
+        top: -80,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <PricingCard
+          color='#ec912d'
+          title='AWS Developer Associate Exam Questions'
+          price='Ace the exam'
+          info={['The number one exam prep guide of all time', 'Powered by AWS']}
+          button={{
+            title: 'View Questions by Service',
+            icon: 'cloud',
+          }}
+          onButtonPress={ () => navigation.navigate('Services') }
+          containerStyle={{
+            paddingTop: 20
+          }}
+        />
+      </View>
     )
   }
 }

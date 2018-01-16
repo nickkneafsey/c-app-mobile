@@ -17,6 +17,7 @@ class QuestionSwipeCard extends Component {
           backgroundColor={selected ? '#ec912d' : 'white'}
           color={selected ? 'white' : 'black'}
           title={answer}
+          textStyle={{ textAlign: 'center' }}
          />
       )
     })
