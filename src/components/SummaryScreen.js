@@ -9,6 +9,7 @@ import Storage from '../utilities/Storage'
 import QuestionSummary from './QuestionSummary'
 import services from '../utilities/services'
 import { resetAction } from '../actions/ResetActions'
+import formatServiceHighScoreKey from '../utilities/helpers'
 
 
 class SummaryScreen extends Component {
@@ -65,13 +66,14 @@ class SummaryScreen extends Component {
   }
 
   checkForHighScore(score) {
+    const { service } = this.props
     Storage.load({
-      key: `${this.props.service}HighScore`
+      key: formatServiceHighScoreKey(service)
     }).then(data => {
       console.log("DATAAA", data)
       if (score > data) {
         Storage.save({
-          key: `${this.props.service}HighScore`,
+          key: formatServiceHighScoreKey(service),
           data: score
         })
       }
@@ -81,7 +83,7 @@ class SummaryScreen extends Component {
         case 'NotFoundError':
           console.log('Token not found error')
           Storage.save({
-            key: `${_.replace(this.props.service, new RegExp("_","g"),"-")}HighScore`,
+            key: formatServiceHighScoreKey(service),
             data: score
           })
           break

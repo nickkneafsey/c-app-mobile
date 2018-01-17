@@ -8,6 +8,7 @@ import fetchQuestionsByService from '../queries/fetchQuestionsByService'
 import services from '../utilities/services'
 import Storage from '../utilities/Storage'
 import * as BackupData from '../data'
+import formatServiceHighScoreKey from '../utilities/helpers'
 
 
 class ServiceScreen extends Component {
@@ -22,7 +23,7 @@ class ServiceScreen extends Component {
     const { service } = this.props.navigation.state.params
     // use replace because storage library doesnt allow for underscores
     Storage.load({
-      key: `${_.replace(service, new RegExp("_","g"),"-")}HighScore`
+      key: formatServiceHighScoreKey(service)
     }).then(data => {
       console.log('data', data)
       this.setState({ highScore: data })
