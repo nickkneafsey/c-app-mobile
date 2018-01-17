@@ -221,18 +221,6 @@
         "service": "DYNAMO_DB"
       },
       {
-        "id": "5a5d21812403cb07494d514b",
-        "text": "Which of the following is more efficient?",
-        "answers": [
-          "Query",
-          "Scan"
-        ],
-        "correctAnswers": [
-          "Query"
-        ],
-        "service": "DYNAMO_DB"
-      },
-      {
         "id": "5a5d218c2403cb07494d514d",
         "text": "You would like to query for several items at once. Which of the following API calls will allow for this?",
         "answers": [

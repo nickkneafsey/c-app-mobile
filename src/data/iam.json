@@ -27,19 +27,6 @@
         "service": "IAM"
       },
       {
-        "id": "5a0e7fcf1958112e4bc59aca",
-        "text": "You are provisioning an EC2 instance that needs access to an S3 bucket. Which of the following is the best way to do this?",
-        "answers": [
-          "Add your Access Key ID and Secret Access ID to the EC2",
-          "Create a IAM Group with S3 access and add the EC2 instance to that group",
-          "Add a IAM Role to the EC2 that has access to the S3 bucket"
-        ],
-        "correctAnswers": [
-          "Add a IAM Role to the EC2 that has access to the S3 bucket"
-        ],
-        "service": "IAM"
-      },
-      {
         "id": "5a0e7ff11958112e4bc59acc",
         "text": "You are provisioning a virtual machine outside of AWS that needs access to an S3 bucket. Which of the following is the best way to do this?",
         "answers": [
@@ -151,19 +138,6 @@
         ],
         "correctAnswers": [
           "True"
-        ],
-        "service": "IAM"
-      },
-      {
-        "id": "5a0e80761958112e4bc59ade",
-        "text": "You are provisioning an EC2 instance that needs access to an S3 bucket. Which of the following is the best way to do this?",
-        "answers": [
-          "Add your Access Key ID and Secret Access ID to the EC2",
-          "Create a IAM Group with S3 access and add the EC2 instance to that group",
-          "Add a IAM Role to the EC2 that has access to the S3 bucket"
-        ],
-        "correctAnswers": [
-          "Add a IAM Role to the EC2 that has access to the S3 bucket"
         ],
         "service": "IAM"
       },

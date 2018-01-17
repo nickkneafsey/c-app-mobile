@@ -111,21 +111,6 @@
         "service": "ROUTE_53"
       },
       {
-        "id": "5a5d23e035b83d0808f56a4f",
-        "text": "You have a fleet of EC2’s running in Ireland and a fleet of EC2’s running in the United States. Which of the following wouid you use if you want to route 80% of traffic to your fleet in the United States and the other 20% to Ireland?",
-        "answers": [
-          "Simple",
-          "Geolocation",
-          "Weighted",
-          "Latency",
-          "Failover"
-        ],
-        "correctAnswers": [
-          "Weighted"
-        ],
-        "service": "ROUTE_53"
-      },
-      {
         "id": "5a5d23ec35b83d0808f56a51",
         "text": "You are running an application where you would like to serve localized content for some particular countries. Which of the following policies would you use to achieve this?",
         "answers": [

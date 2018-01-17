@@ -50,18 +50,6 @@
         "service": "CLOUDFORMATION"
       },
       {
-        "id": "5a5d20942403cb07494d5125",
-        "text": "True or False. There is a limit to the number of Lambda of functions that can execute at once.",
-        "answers": [
-          "True",
-          "False"
-        ],
-        "correctAnswers": [
-          "False"
-        ],
-        "service": "CLOUDFORMATION"
-      },
-      {
         "id": "5a5d209d2403cb07494d5127",
         "text": "True or False. CloudFormation can work with Chef and Puppet.",
         "answers": [

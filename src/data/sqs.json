@@ -190,7 +190,7 @@
       },
       {
         "id": "5a5d267735b83d0808f56ab3",
-        "text": "In SQS, which of the following are you not charged for?",
+        "text": "In SQS, which of the following are you not charged for? (Choose 2)",
         "answers": [
           "Requests",
           "Transfers of data to EC2 in a different region",

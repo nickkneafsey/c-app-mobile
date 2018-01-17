@@ -52,18 +52,6 @@
         "service": "VPC"
       },
       {
-        "id": "5a5d27441bf6b308803202c4",
-        "text": "You set up a NAT instance, but you are still unable to reach the internet via EC2 instances running in your private subnet. Which of the following could be causing the failure in your setup?",
-        "answers": [
-          "Your NAT instance is in a public subnet",
-          "False"
-        ],
-        "correctAnswers": [
-          "False"
-        ],
-        "service": "VPC"
-      },
-      {
         "id": "5a5d274f1bf6b308803202c6",
         "text": "True or false. You should only put NAT instances in private subnets.",
         "answers": [
@@ -156,19 +144,6 @@
         "service": "VPC"
       },
       {
-        "id": "5a5d27b61bf6b308803202d4",
-        "text": "Can you have overlapping IP addresses in accounts that have VPC peering enabled between them?",
-        "answers": [
-          "Yes",
-          "Yes, but you need to specify which accounts via the console or API",
-          "No"
-        ],
-        "correctAnswers": [
-          "No"
-        ],
-        "service": "VPC"
-      },
-      {
         "id": "5a5d27c01bf6b308803202d6",
         "text": "Can you have overlapping IP addresses in accounts that have VPC peering enabled between them?",
         "answers": [
@@ -215,6 +190,19 @@
         ],
         "correctAnswers": [
           "False"
+        ],
+        "service": "VPC"
+      },
+      {
+        "id": "5a5d27441bf6b308803202c4",
+        "text": "You set up a NAT instance, but you are still unable to reach the internet via EC2 instances running in your private subnet. Which of the following could be causing the failure in your setup?",
+        "answers": [
+          "Your NAT instance is in a public subnet",
+          "You need to disable the Source Destination Check on the NAT instance",
+          "Your NAT instance is not in the same AZ as your EC2 instance"
+        ],
+        "correctAnswers": [
+          "You need to disable the Source Destination Check on the NAT instance"
         ],
         "service": "VPC"
       }

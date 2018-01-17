@@ -171,18 +171,6 @@
         "service": "S3"
       },
       {
-        "id": "5a5d24c935b83d0808f56a75",
-        "text": "True or false. If you stop an EC2 instance backed by an EBS volume, you will lose all data on the device",
-        "answers": [
-          "True",
-          "False"
-        ],
-        "correctAnswers": [
-          "False"
-        ],
-        "service": "S3"
-      },
-      {
         "id": "5a5d24d635b83d0808f56a77",
         "text": "You create a new S3 Bucket. True or False. By default this new bucket is Public.",
         "answers": [
