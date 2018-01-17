@@ -1,0 +1,50 @@
+{
+  "data": {
+    "questions": [
+      {
+        "id": "5a5ed96d95d8c51158ae8d9b",
+        "text": "Which of the following caching solutions are supported by Elasticache? (Choose 2)",
+        "answers": [
+          "Memcached",
+          "MongoDB",
+          "Redis",
+          "CouchDB",
+          "SAP HANA"
+        ],
+        "correctAnswers": [
+          "Redis",
+          "Memcached"
+        ],
+        "service": "ELASTICACHE"
+      },
+      {
+        "id": "5a5ed97f95d8c51158ae8d9d",
+        "text": "Which of the following use cases would make sense to store using Elasticache? (Choose 2)",
+        "answers": [
+          "As a relational database",
+          "Storing session data for a web app",
+          "To host a website",
+          "Caching expensive database queries",
+          "Storing Files"
+        ],
+        "correctAnswers": [
+          "Storing session data for a web app",
+          "Caching expensive database queries"
+        ],
+        "service": "ELASTICACHE"
+      },
+      {
+        "id": "5a5ed98c95d8c51158ae8d9f",
+        "text": "True or False. You can access an Elasticache from a corporate data center.",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswers": [
+          "False"
+        ],
+        "service": "ELASTICACHE"
+      }
+    ]
+  }
+}

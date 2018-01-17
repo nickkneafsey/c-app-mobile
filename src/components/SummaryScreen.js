@@ -96,6 +96,7 @@ class SummaryScreen extends Component {
     return (
       <ScrollView>
         <PricingCard
+          color='#ec912d'
           title={service.value}
           price={`${this.state.score}%`}
           info={[ this.state.scoreString ]}
