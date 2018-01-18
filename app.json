@@ -1,5 +1,11 @@
 {
   "expo": {
-    "sdkVersion": "21.0.0"
+    "sdkVersion": "21.0.0",
+    "icon": "./assets/white_cloud_black_background_1024.png",
+    "splash": {
+      "image": "./assets/white_cloud.png",
+      "backgroundColor": "#000000",
+      "resizeMode": "300x300"
+    }
   }
 }

@@ -20,8 +20,8 @@ class HomeScreen extends Component {
         <PricingCard
           color='#ec912d'
           title='AWS Developer Associate Exam Questions'
-          price='Ace the exam'
-          info={['The number one exam prep guide of all time', 'Powered by AWS']}
+          price='Pass the Exam!'
+          info={['Powered by AWS']}
           button={{
             title: 'View Questions by Service',
             icon: 'cloud',
