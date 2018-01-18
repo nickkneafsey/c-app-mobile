@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
-import { View } from 'react-native'
+import { View, Image } from 'react-native'
 import { Card, Text, Button } from 'react-native-elements'
 import _ from 'lodash'
 
@@ -46,11 +46,21 @@ class ServiceScreen extends Component {
     const service =  _.find(services, { 'key': navigation.state.params.service });
     return (
       <Card>
-        <Text h3>{service.value}</Text>
+        <Text h3 style={{ textAlign: 'center' }}>{service.value}</Text>
+        <Text></Text>
         <View>
+          <View style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <Image
+              style={{width: 150, height: 150 , resizeMode: Image.resizeMode.contain }}
+              source={{ uri: service.largeImageUrl }}
+            />
+          </View>
           <Text></Text>
-          <Text>Total Questions: {questions.length}</Text>
-        <Text>Your best score: {this.state.highScore}%</Text>
+          <Text style={{ textAlign: 'center' }}>Total Questions: {questions.length}</Text>
+          <Text style={{ textAlign: 'center' }}>Your best score: {this.state.highScore}%</Text>
           <Text></Text>
           <Button
             onPress={() => navigation.navigate('Questions', { questions })}

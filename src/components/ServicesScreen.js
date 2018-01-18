@@ -31,7 +31,7 @@ class ServicesScreen extends Component {
                   avatar={{ uri: service.imageUrl }}
                   avatarStyle={{
                     backgroundColor: 'white',
-                    // resizeMode: Image.resizeMode.contain  // add this back later
+                    resizeMode: Image.resizeMode.contain  // add this back later
                   }}
                   onPress={() => {
                     this.props.updateSelectedService(service.key)
