@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-// import { StyleSheet } from 'react-native'
+import { StatusBar } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
@@ -64,17 +64,8 @@ export default class App extends React.Component {
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, ReduxPromise, client.middleware()))
     return (
       <ApolloProvider client={client} store={store}>
-        <AppNavigator />
+        <AppNavigator onNavigationStateChange={ () => StatusBar.setBarStyle('dark-content') }/>
       </ApolloProvider>
     )
   }
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center'
-//   }
-// })

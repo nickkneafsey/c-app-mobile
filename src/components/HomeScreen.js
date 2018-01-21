@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import { Card, Button, Text, PricingCard } from 'react-native-elements'
-import { View } from 'react-native'
+import { View, StatusBar, Image } from 'react-native'
 
 class HomeScreen extends Component {
   static navigationOptions = {
     title: 'Welcome'
+  }
+
+  componentWillMount() {
+    // This is a hack
+    StatusBar.setBarStyle('dark-content')
   }
 
   render () {
@@ -12,7 +17,7 @@ class HomeScreen extends Component {
     return (
       <View style={{
         flex: 1,
-        top: -80,
+        top: -70,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -21,7 +26,7 @@ class HomeScreen extends Component {
           color='#ec912d'
           title='AWS Developer Associate Exam Questions'
           price='Pass the Exam!'
-          info={['Powered by AWS']}
+          info={[]}
           button={{
             title: 'View Questions by Service',
             icon: 'cloud',
@@ -30,6 +35,10 @@ class HomeScreen extends Component {
           containerStyle={{
             paddingTop: 20
           }}
+        />
+        <Image
+          source={{ uri: 'https://s3.amazonaws.com/aws-icons-woo/powered-by-aws.png' }}
+          style={{ height: 70, width: 130, resizeMode: 'contain' }}
         />
       </View>
     )
