@@ -49,7 +49,7 @@ class QuestionSwipeDeck extends Component {
     if (this.state.showEndButton || questions.length === 1) {
       return (
         <Button
-          buttonStyle={{ bottom: 50 }}
+          buttonStyle={{ marginBottom: 50  }}
           title={'Submit Answers'}
           color={'black'}
           backgroundColor={'white'}
