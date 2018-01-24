@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Button, Text, PricingCard } from 'react-native-elements'
-import { View, StatusBar, Image } from 'react-native'
+import { View, StatusBar, Image, Platform } from 'react-native'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -9,7 +9,7 @@ class HomeScreen extends Component {
 
   componentWillMount() {
     // This is a hack
-    StatusBar.setBarStyle('dark-content')
+    Platform.OS === 'ios' ? StatusBar.setBarStyle('dark-content') : StatusBar.setHidden(true)
   }
 
   render () {

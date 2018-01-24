@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import { StatusBar } from 'react-native'
+import { StatusBar, Platform } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
@@ -64,7 +64,7 @@ export default class App extends React.Component {
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, ReduxPromise, client.middleware()))
     return (
       <ApolloProvider client={client} store={store}>
-        <AppNavigator onNavigationStateChange={ () => StatusBar.setBarStyle('dark-content') }/>
+        <AppNavigator onNavigationStateChange={() => Platform.OS === 'ios' ? StatusBar.setBarStyle('dark-content') : StatusBar.setHidden(true)} />
       </ApolloProvider>
     )
   }
