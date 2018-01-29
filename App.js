@@ -5,7 +5,7 @@ import { StackNavigator } from 'react-navigation'
 
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
-import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
+import { createStore, applyMiddleware, combineReducers } from 'redux'
 import ReduxThunk from 'redux-thunk'
 import ReduxPromise from 'redux-promise'
 

@@ -25,9 +25,8 @@ class ServiceScreen extends Component {
     Storage.load({
       key: formatServiceHighScoreKey(service)
     }).then(data => {
-      console.log('data', data)
       this.setState({ highScore: data })
-    }).catch((err) => console.log("do nothing"))
+    }).catch((err) => console.log("Error fetching high score"))
   }
 
   static navigationOptions = ({ navigation }) => {
@@ -38,8 +37,6 @@ class ServiceScreen extends Component {
   render() {
     const { data, navigation } = this.props
     const { backupQuestions } = this.state
-
-    console.log("QUESTION DATA FROM SERVER", data)
 
     const questions = data.questions && data.questions.length > 0 ? data.questions : backupQuestions.data.questions
 

@@ -4,7 +4,7 @@ import Storage from './Storage'
 const LAMBDA_URL = 'https://l9poitcws4.execute-api.us-east-1.amazonaws.com/prod'
 
 export function createAuthToken () {
-  console.log('Creating Auth token')
+  console.log('Creating Auth token...')
   return axios.post(`${LAMBDA_URL}/auth`, {})
     .then(async (response) => {
       const token = response.data.token

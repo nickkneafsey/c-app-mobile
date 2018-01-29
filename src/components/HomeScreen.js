@@ -8,7 +8,7 @@ class HomeScreen extends Component {
   }
 
   componentWillMount() {
-    // This is a hack
+    // This is a hack until I figure out how to configure StatusBar with Apollo Client
     Platform.OS === 'ios' ? StatusBar.setBarStyle('dark-content') : StatusBar.setHidden(true)
   }
 

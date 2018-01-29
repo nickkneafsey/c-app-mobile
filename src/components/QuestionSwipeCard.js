@@ -10,7 +10,7 @@ class QuestionSwipeCard extends Component {
       let selected = selectedAnswers.indexOf(answer) !== -1
       return (
         <Button
-          containerViewStyle={{ marginBottom: 1}}
+          containerViewStyle={{ marginBottom: 1 }}
           large
           key={answer}
           onPress={() => this.props.onAnswerPress(answer, questionObject)}

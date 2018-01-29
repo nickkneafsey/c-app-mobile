@@ -62,7 +62,7 @@ class SummaryScreen extends Component {
       score,
       scoreString: `${totalCorrectAnswers} out of ${numberOfQuestions}`
     })
-    // TODO set this is async storage later
+    // TODO set this in async storage later
   }
 
   checkForHighScore(score) {
@@ -70,7 +70,6 @@ class SummaryScreen extends Component {
     Storage.load({
       key: formatServiceHighScoreKey(service)
     }).then(data => {
-      console.log("DATAAA", data)
       if (score > data) {
         Storage.save({
           key: formatServiceHighScoreKey(service),

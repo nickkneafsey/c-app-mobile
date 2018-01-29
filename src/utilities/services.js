@@ -1,5 +1,5 @@
 const services = [
-  { key: 'EC2', value: 'Amazon EC2', developerAssociate: true, imageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Compute_AmazonEC2.png', largeImageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Compute_AmazonEC2_LARGE.png'},
+  { key: 'EC2', value: 'Amazon EC2', developerAssociate: true, imageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Compute_AmazonEC2.png', largeImageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Compute_AmazonEC2_LARGE.png' },
   { key: 'S3', value: 'Amazon S3', developerAssociate: true, imageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Storage_AmazonS3.png', largeImageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Storage_AmazonS3_LARGE.png' },
   { key: 'RDS', value: 'Amazon RDS', developerAssociate: false, imageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Database_AmazonRDS.png', largeImageUrl: '' },
   { key: 'SQS', value: 'Amazon SQS', developerAssociate: true, imageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Messaging_AmazonSQS.png', largeImageUrl: 'https://s3.amazonaws.com/aws-icons-woo/Messaging_AmazonSQS_LARGE.png' },

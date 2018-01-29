@@ -22,7 +22,7 @@ class QuestionSwipeDeck extends Component {
     } else {
       if (answers.indexOf(answer) !== -1) {
         // Answer already in array => remove from array
-         _.pull(answers, answer)
+        _.pull(answers, answer)
       } else if (answers.length < correctAnswers.length) {
         // Array not full => add to array
         answers.push(answer)
@@ -49,7 +49,7 @@ class QuestionSwipeDeck extends Component {
     if (this.state.showEndButton || questions.length === 1) {
       return (
         <Button
-          buttonStyle={{ marginBottom: 50  }}
+          buttonStyle={{ marginBottom: 50 }}
           title={'Submit Answers'}
           color={'black'}
           backgroundColor={'white'}
