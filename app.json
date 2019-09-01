@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AWS Developer Associate Exam Questions",
-    "sdkVersion": "21.0.0",
+    "sdkVersion": "34.0.0",
     "slug": "developer-associate-exam-questions",
     "icon": "./assets/white_cloud_1024_small.png",
     "splash": {
