@@ -13,7 +13,8 @@
       "bundleIdentifier": "com.kneafs.developerassociatequestions"
     },
     "android": {
-      "package": "com.kneafs.developerassociatequestions"
+      "package": "com.kneafs.developerassociatequestions",
+      "versionCode": 2
     }
   }
 }
