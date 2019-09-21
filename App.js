@@ -1,10 +1,14 @@
 'use strict'
 import React from 'react'
+import { Provider } from 'react-redux'
 import { StatusBar, Platform } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
-import ApolloClient, { createNetworkInterface } from 'apollo-client'
+import ApolloClient from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
+import { createHttpLink } from 'apollo-link-http'
+import { ApolloLink } from 'apollo-link'
+import { InMemoryCache } from 'apollo-cache-inmemory'
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import ReduxThunk from 'redux-thunk'
 import ReduxPromise from 'redux-promise'
@@ -19,34 +23,28 @@ import SummaryScreen from './src/components/SummaryScreen'
 
 import { getTokenFromStorage } from './src/utilities/Auth'
 
-// Network Interface stuff
-const networkInterface = createNetworkInterface({
+const httpLink = createHttpLink({
   uri: 'https://l9poitcws4.execute-api.us-east-1.amazonaws.com/prod/graphql'
 })
-
-networkInterface.use([{
-  applyMiddleware (req, next) {
-    if (!req.options.headers) {
-      req.options.headers = {}  // Create the header object if needed.
+const middlewareLink = new ApolloLink((operation, forward) => {
+  operation.setContext({
+    headers: {
+      authorization: localStorage.getItem('token') || null
     }
-
-    getTokenFromStorage().then((token) => {
-      req.options.headers.authorization = token ? `${token}` : null
-      console.log('Token for network interface', token)
-      next()
-    })
-  }
-}])
+  })
+  return forward(operation)
+})
 
 // Create Apollo client with network interface
-const client = new ApolloClient({
-  networkInterface
+let client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache()
 })
 
 // Reducers
 const reducers = combineReducers({
-  service: ServiceReducer,
-  apollo: client.reducer()
+  service: ServiceReducer
+  // apollo: client.reducer()
 })
 
 // React Navigation
@@ -61,11 +59,23 @@ const AppNavigator = StackNavigator({
 // App
 export default class App extends React.Component {
   render () {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, ReduxPromise, client.middleware()))
+    const store = createStore(
+      reducers,
+      {},
+      applyMiddleware(ReduxThunk, ReduxPromise)
+    )
     return (
-      <ApolloProvider client={client} store={store}>
-        <AppNavigator onNavigationStateChange={() => Platform.OS === 'ios' ? StatusBar.setBarStyle('dark-content') : StatusBar.setHidden(true)} />
-      </ApolloProvider>
+      <Provider store={store}>
+        <ApolloProvider client={client}>
+          <AppNavigator
+            onNavigationStateChange={() =>
+              Platform.OS === 'ios'
+                ? StatusBar.setBarStyle('dark-content')
+                : StatusBar.setHidden(true)
+            }
+          />
+        </ApolloProvider>
+      </Provider>
     )
   }
 }
